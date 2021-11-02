@@ -104,31 +104,39 @@ header {
 .main {
     background-color: var(--additional-color);
     height: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
 body {
-    background-color: #000;
+    background: url(https://d2kq0urxkarztv.cloudfront.net/60bae25c996d510089043f7e/2888580/upload-7d866a3f-26dd-49ce-a263-9d96dbd7998c.png?e=webp&nll=true) center / cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 .wrapper {
     width: 100%;
-    background: url(https://d2kq0urxkarztv.cloudfront.net/60bae25c996d510089043f7e/2888580/upload-7d866a3f-26dd-49ce-a263-9d96dbd7998c.png?e=webp&nll=true) center / cover;
-    background-attachment: fixed;
+    
 }
 
 .body__container {
     margin: 0 auto;
-    display: block;
     width: 1100px;
 }
 
 section {
-    margin: 140px 0 0px 0;
+    margin: 100px auto;
 }
 
-.body__calculation-section {
+.body__section-flex
+.footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .body__main-text {
@@ -180,6 +188,7 @@ section {
     z-index: 1;
 }
 
+
 .body__paragraph-box {
     margin: 60px auto;
     text-align: center;
@@ -195,7 +204,7 @@ section {
     height: 3px;
     width: 100%;
     border-radius: 30px;
-    margin: 230px 0 70px 0;
+    margin: 230px auto 70px;
 }
 
 .body__text-lines {
@@ -298,7 +307,12 @@ select {
     display: flex;
     flex-direction: row;
     padding: 80px 100px;
-    align-items: center;
+}
+
+.body__calculation-section {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .body__sub-num,
@@ -465,9 +479,179 @@ select {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .body__container {
-        width: 900px;
+        width: 1000px;
+    }
+
+    .body__sub-num, .body__mon-num {
+        width: 227px;
+    }
+
+    .body__calculation-box {
+        padding: 80px 70px;
+    }
+    
+    .body__calculation-box {
+        width: 100%;
+    }
+
+    .body__h3 {
+        font-size: 46px;
+    }
+
+    .body__sub-select h3 {
+        font-size: 40px;
+    }
+
+    .body__subtitle {
+        font-size: 22px;
+    }
+
+    .body__text-block,
+    .body__text-lines {
+        width: 90%;
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .body__calc-box {
+        width: 1000px;
+    }
+
+    .body__calculation-box {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .body__headline {
+        font-size: 120px;
+        line-height: 100px;
+    }
+
+    .body__text-block,
+    .body__text-lines,
+    footer {
+        width: 80%;
+    }
+
+    .body__faces img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .top-face {
+        top: -20vh;
+        left: 38vw;
+    }
+    
+    .left-face {
+        top: 0vh;
+        left: 5vw;
+        z-index: -10;
+    }
+    
+    .bottom-left-face {
+        top: 45vh;
+        left: 10vw;
+        z-index: -100;
+    }
+    
+    .right-face {
+        top: 6vh;
+        right: -10vw;
+    }
+
+    .body__paragraph {
+        font-size: 24px;
+        letter-spacing: -1.5;
+    }
+
+    .body__calculation-section {
+        width: 90%;
+    }
+
+    .body__h3 {
+        font-size: 40px;
+    }
+
+    .body__sub-select h3 {
+        font-size: 34px;
+        letter-spacing: -0.6;
+    }
+
+    .body__subtitle {
+        font-size: 18px;
+    }
+
+    .body__calculation-box {
+        padding: 50px 50px;
+        height: 200px;
+    }
+
+    .body__calc-box {
+        width: 800px;
+    }
+
+    .body__sub-num, .body__mon-num {
+        width: 150px;
+    }
+
+    .body__text-sub {
+        width: 52vw;
+    }
+
+    .body__section-divider {
+        width: 80%;
+    }
+
+    .body__applepay-logo {
+        margin-left: 40px;
+    }
+
+    .fa-5x {
+        font-size: 4em;
+    }
+
+    .margin-0 {
+        margin: 0 40px 0 60px;
+    }
+
+    .body__section-flex,
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .body__pic-block img {
+        width: 60%;
+        height: 60%;
+    }
+
+    .first {
+        top: -15%;
+        right: -10%;
+        width: 34%;
+    }
+
+    .second {
+        top: 25%;
+        right: -7%;
+        width: 30%;
+    }
+
+    .third {
+        top: 60%;
+        right: -5%;
+        width: 30%;
+    }
+
+    .fourth {
+        top: 90%;
+        right: 10%;
+        width: 23%;
+    }
+}

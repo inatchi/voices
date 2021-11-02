@@ -57,7 +57,7 @@ const Body = () => {
                         </div>
                     </section>
                     <div className="body__section-divider"></div>
-                    <section className="body__screen-section">
+                    <section className="body__screen-section body__section-flex">
                         <div className="body__text-lines">
                             <div className="body__h3">
                                 <h3>Connect with fans,</h3>
@@ -79,7 +79,7 @@ const Body = () => {
                             <img src={Screen} />
                         </div>
                     </section>
-                    <section>
+                    <section className="body__section-flex">
                     <div className="body__text-lines">
                             <div className="body__h3">
                                 <h3>Monetize and split revenue </h3>
@@ -90,7 +90,7 @@ const Body = () => {
                                     <p>We only take 10%</p>
                                     <p>And you keep 100% of your tips</p>
                                 </div>
-                                <div className="body__divider"></div>
+                                <div className="body__divider margin-0"></div>
                                 <div className="body__subtitle">
                                     <p>For an additional 5%,</p>
                                     <p>get paid in seconds</p>
@@ -106,8 +106,8 @@ const Body = () => {
                         <Calculator />
                     </div>
                     <div className="body__container">
-                    <section>
-                        <div className="body__text-n-picture">
+                    <section className="body__section-flex">
+                        <div className="body__text-n-picture body__text-lines">
                             <div className="body__text-block">
                                 <div className="body__h3">
                                     <h3>This is how Creator</h3>

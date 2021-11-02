@@ -1,5 +1,5 @@
 {
-  "homepage": "http://inatchi.github.io/voice",
+  "homepage": "https://github.com/inatchi/voices#dist/index.html",
   "name": "voices",
   "version": "1.0.0",
   "description": "",
@@ -18,7 +18,6 @@
   "bugs": {
     "url": "https://github.com/inatchi/voices/issues"
   },
-  "homepage": "https://github.com/inatchi/voices#readme",
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
