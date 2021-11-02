@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import Face1 from './img/face-1.webp';
 import Face2 from './img/face-2.webp';
 import Face3 from './img/face-3.webp';
@@ -15,7 +15,6 @@ import { faApplePay } from '@fortawesome/free-brands-svg-icons';
 import Heart from './img/heart.svg';
 import Parallax from 'react-rellax';
 import Calculator from './calculator.jsx';
-
 
 const Body = () => {
     return (
@@ -58,7 +57,7 @@ const Body = () => {
                     </section>
                     <div className="body__section-divider"></div>
                     <section className="body__screen-section body__section-flex">
-                        <div className="body__text-lines">
+                        <div className="body__text-lines body__margin">
                             <div className="body__h3">
                                 <h3>Connect with fans,</h3>
                                 <h3>build your squad</h3>
@@ -75,8 +74,10 @@ const Body = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="body__screenshots">
-                            <img src={Screen} />
+                        <div className="screen-parallax">
+                                <div className="body__screenshots">
+                                    <img src={Screen} />
+                                </div>
                         </div>
                     </section>
                     <section className="body__section-flex">
