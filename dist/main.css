@@ -38,7 +38,6 @@ a {
 header {
     margin: 0 auto;
     color: var(--primary-color);
-    height: 177px;
 }
 
 .header__flexbox {
@@ -116,20 +115,26 @@ body {
     background: url(https://d2kq0urxkarztv.cloudfront.net/60bae25c996d510089043f7e/2888580/upload-7d866a3f-26dd-49ce-a263-9d96dbd7998c.png?e=webp&nll=true) center / cover;
     background-attachment: fixed;
     overflow-x: hidden;
-}
-
-.wrapper {
-    width: 100%;
     
 }
 
-.body__container {
+.container {
     margin: 0 auto;
-    width: 1100px;
+    width: 90%;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
 }
 
 section {
     margin: 100px auto;
+}
+
+.body__main-section {
+    margin-top: 250px;
 }
 
 .body__section-flex
@@ -154,13 +159,13 @@ section {
 }
 
 .top-face {
-    top: -29vh;
-    left: 28vw;
+    top: -20vh;
+    left: 37vw;
 }
 
 .left-face {
     top: 0vh;
-    left: -4vw;
+    left: 5vw;
     z-index: -10;
 }
 
@@ -177,7 +182,7 @@ section {
 
 .right-face {
     top: 6vh;
-    right: -13vw;
+    right: -5vw;
 }
 
 .body__headline {
@@ -258,7 +263,7 @@ section {
 
 .body__calc-box {
     display: block;
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -481,7 +486,7 @@ select {
 
 @media screen and (max-width: 1300px) {
     .body__container {
-        width: 1000px;
+        
     }
 
     .body__sub-num, .body__mon-num {
@@ -510,14 +515,12 @@ select {
 
     .body__text-block,
     .body__text-lines {
-        width: 90%;
+
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .body__calc-box {
-        width: 1000px;
-    }
+    
 
     .body__calculation-box {
         height: 250px;
@@ -530,39 +533,12 @@ select {
         line-height: 100px;
     }
 
-    .body__text-block,
-    .body__text-lines,
-    footer {
-        width: 80%;
-    }
-
     .body__faces img {
         width: 40%;
         height: 40%;
     }
 
-    .top-face {
-        top: -20vh;
-        left: 38vw;
-    }
     
-    .left-face {
-        top: 0vh;
-        left: 5vw;
-        z-index: -10;
-    }
-    
-    .bottom-left-face {
-        top: 45vh;
-        left: 10vw;
-        z-index: -100;
-    }
-    
-    .right-face {
-        top: 6vh;
-        right: -10vw;
-    }
-
     .body__paragraph {
         font-size: 24px;
         letter-spacing: -1.5;
@@ -590,14 +566,14 @@ select {
         height: 200px;
     }
 
-    .body__calc-box {
+    /*.body__calc-box {
         width: 800px;
-    }
+    }*/
 
     .body__sub-num, .body__mon-num {
         width: 150px;
     }
-
+/*
     .body__text-sub {
         width: 52vw;
     }
@@ -605,7 +581,7 @@ select {
     .body__section-divider {
         width: 80%;
     }
-
+*/
     .body__applepay-logo {
         margin-left: 40px;
     }
@@ -654,4 +630,8 @@ select {
         right: 10%;
         width: 23%;
     }
+}
+
+@media screen and (max-width: 1024px) {
+
 }

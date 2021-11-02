@@ -6,11 +6,16 @@ import Footer from './footer.jsx';
 
 const App = () => {
     return (
-        <div className="wrapper">
+        <>
             <Header />
-            <Body />
-            <Footer />
-        </div>
+            <div className="container">
+                <div className="wrapper">
+                    
+                    <Body />
+                    <Footer />
+                </div>
+            </div>
+        </>
     );
 };
 
