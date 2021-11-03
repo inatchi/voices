@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="body__subtitle">
                     <p>© 2021, Voices Inc.</p>
                 </div>
-                <div className="body__divider"></div>
+                <div className="body__divider margin-0"></div>
                 <div className="body__text-sub">
                     <p>We are creators ourselves. Backed by founders of <span>PayPal</span>, <span>Signal</span>, <span>Tinder</span>, and <span>Shutterstock</span>, we're working hard 
                         to make Voices available for a billion people.</p>

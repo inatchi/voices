@@ -22,7 +22,7 @@ const Calculator = () => {
                         <p>Per month</p>
                     </div>
                 </div>
-                <div className="body__divider-2"></div>
+                <div className="body__divider-2 orientation"></div>
                 <div className="body__result-num">
                 <div className="body__sub-select">
                     <h3 className="body__h3">$31,500</h3>

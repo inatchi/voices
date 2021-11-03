@@ -139,6 +139,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: hidden;
 }
 
 .body__main-text {
@@ -152,11 +153,14 @@ section {
 .body__faces {
     position: absolute;
     margin: 0;
+    max-width: 100%;
 }
 
 .body__faces img {
-    width: 50%;
-    height: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    width: 14vw;
+    object-fit: cover;
 }
 
 .top-face {
@@ -183,7 +187,11 @@ section {
 
 .right-face {
     top: 27vh;
-    right: -6vw;
+    right: 0vw;
+}
+
+.right-face img {
+    width: 12vw;
 }
 
 .body__headline {
@@ -243,7 +251,7 @@ section {
 }
 
 .body__subtitle {
-    font-size: 28px;
+    font-size: 20px;
     margin-bottom: 30px;
 }
 
@@ -430,10 +438,6 @@ select {
     text-align: center;
 }
 
-.body__text-sub {
-    width: 35vw;
-}
-
 .body__text-sub p {
     font-size: 22px;
     color: var(--secondary-color);
@@ -485,6 +489,7 @@ select {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .body__text-sub span:hover {
@@ -515,7 +520,7 @@ select {
     }
 
     .body__subtitle {
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 
@@ -548,6 +553,7 @@ select {
 }
 
 @media screen and (max-width: 1024px) {
+
     .right-face {
        
     }
@@ -574,8 +580,7 @@ select {
     }
 
     .body__faces img {
-        width: 40%;
-        height: 40%;
+       
     }
     
     .body__paragraph {
@@ -597,7 +602,7 @@ select {
     }
 
     .body__subtitle {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .body__calculation-box {
@@ -660,15 +665,20 @@ select {
 }
 
 @media screen and (max-width: 830px) {
-    
+
+
+    .body__text p, 
+    .body__text-sub p, 
+    .body__button-box a {
+        font-size: 16px;
+    }
     
     .right-face {
         
     }
 
     .body__faces img {
-        width: 42%;
-        height: 42%;
+        
     }
     
     .top-face {
@@ -714,12 +724,12 @@ select {
     }
 
     .body__subtitle {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .body__text p,
     .body__text-sub p,
-    .body__button-box a {
+    .body__button-box a{
         font-size: 20px;
     }
 }
@@ -757,3 +767,55 @@ select {
         font-size: 20px;
     }
 } 
+
+@media screen and (max-width: 731px) {
+    .body__applepay-logo {
+        margin-left: 30px;
+    }
+
+    .fa-5x {
+        font-size: 2.5em;
+    }
+
+    .margin-0 {
+        margin: 0 30px 0 30px;
+    }
+
+    .body__sub-num, .body__mon-num {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .body__text-flexbox {
+        flex-direction: column;
+    }
+
+    
+    .body__text-flexbox .body__divider {
+        margin: 0 40px 0 60px;
+    }
+
+    .body__calculation-box {
+        height: auto;
+        width: auto;
+        align-items: center;
+    }
+
+    .body__text-flexbox .body__divider {
+        width: 60%;
+        height: 1px;
+        margin: 0 0 40px;
+        min-height: auto;
+    }
+
+    .body__sub-num, 
+    .body__mon-num, 
+    .body__result-num {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+}

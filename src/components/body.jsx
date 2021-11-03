@@ -43,7 +43,7 @@ const Body = () => {
                                     <p>Host live video rooms,</p>
                                     <p>sell tickets and subscriptions</p>
                                 </div>
-                                <div className="body__divider"></div>
+                                <div className="body__divider margin-0"></div>
                                 <div className="body__subtitle">
                                     <p>Bring fans on stage,</p>
                                     <p>take questions, start collectives</p>
