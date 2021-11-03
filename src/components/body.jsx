@@ -21,31 +21,7 @@ const Body = () => {
             <main className="body">
                 <div className="body__container">
                     <section className="body__main-section">
-                        <Parallax speed={1}>
-                            <div className="body__faces top-face">
-                                <img src={Face1} />
-                            </div>
-                        </Parallax>
-                        <Parallax speed={3}>
-                            <div className="body__faces left-face">
-                                <img src={Face2} />
-                            </div>
-                        </Parallax>
-                        <Parallax speed={4}>
-                            <div className="body__faces bottom-left-face">
-                                <img src={Face3} />
-                            </div>
-                        </Parallax>
-                        <Parallax speed={3}>
-                            <div className="body__faces bottom-right-face">
-                                <img src={Face4} />
-                            </div>
-                        </Parallax>
-                        <Parallax speed={1}>
-                            <div className="body__faces right-face">
-                                <img src={Face5} />
-                            </div>
-                        </Parallax>
+                        
                         <div className="body__main-text">
                             <h1 className="body__headline">Give your </h1>
                             <h1 className="body__headline">fans a voice</h1> 
