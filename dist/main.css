@@ -563,6 +563,11 @@ select {
 
 @media screen and (max-width: 1024px) {
 
+
+    .body__text-flexbox .body__divider {
+        margin: 0 50px 0 70px;
+    }
+
     .right-face {
        
     }
@@ -572,7 +577,7 @@ select {
     }
     
     .top-face {
-        
+        top: 10vh;
     }
     
     .bottom-left-face {
@@ -624,7 +629,7 @@ select {
     }
 
     .body__applepay-logo {
-        margin-left: 40px;
+        margin-left: 100px;
     }
 
     .fa-5x {
@@ -632,7 +637,7 @@ select {
     }
 
     .margin-0 {
-        margin: 0 40px 0 60px;
+        margin: 0;
     }
 
     
@@ -683,14 +688,6 @@ select {
     }
     
     .right-face {
-        
-    }
-
-    .body__faces img {
-        
-    }
-    
-    .top-face {
         
     }
 
@@ -749,6 +746,10 @@ select {
         line-height: 80px;
         letter-spacing: -6;
     }
+
+    .body__faces img {
+        width: 15vw;
+    }
     
     .body__paragraph {
         font-size: 24px;
@@ -782,24 +783,53 @@ select {
         margin-left: 30px;
     }
 
+    .body__faces img {
+        width: 17vw;
+    }
+
     .fa-5x {
         font-size: 2.5em;
     }
 
     .margin-0 {
-        margin: 0 30px 0 30px;
+        margin: 0;
     }
 
     .body__sub-num, .body__mon-num {
         width: 140px;
     }
+
+    .right-face {
+        right: -7vw;
+    }
+
+    .left-face {
+        left: -5vw;
+        top: 30vh;
+    }
+    
+    .bottom-left-face {
+        left: 0;
+    }
+    
+    .bottom-right-face {
+        right: 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
+    
+    .body__text-lines {
+        margin: 0 0 100px 40px;
+    }
+
     .body__text-flexbox {
         flex-direction: column;
     }
 
+    .body__faces img {
+        width: 20vw;
+    }
     
     .body__text-flexbox .body__divider {
         margin: 0 40px 0 60px;
@@ -809,9 +839,11 @@ select {
         height: auto;
         width: auto;
         align-items: center;
+        flex-direction: column;
     }
 
-    .body__text-flexbox .body__divider {
+    .body__text-flexbox .body__divider,
+    .orientation {
         width: 60%;
         height: 1px;
         margin: 0 0 40px;
@@ -825,6 +857,189 @@ select {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 560px) {
+    .header__container p {
+        display: none;
+    }
+
+    .body__headline {
+        font-size: 70px;
+        line-height: 80px;
+        letter-spacing: -5;
+    }
+
+    .parallax-moji .body__faces img {
+        width: 23vw;
+    }
+    
+    .body__paragraph {
+        font-size: 24px;
+        letter-spacing: -1.5;
+    }
+
+    .body__h3 {
+        font-size: 28px;
+        letter-spacing: -1.9;
+        line-height: 45px;
+    }
+
+    .body__sub-select h3 {
+        font-size: 32px;
+        letter-spacing: -0.6;
+    }
+
+    .body__subtitle {
+        font-size: 15px;
+    }
+
+    .body__text p,
+    .body__text-sub p,
+    .body__button-box a {
+        font-size: 16px;
+    }
+
+    .footer__flexbox {
+        flex-direction: column;
+    }
+
+    .second {
+        right: -13%;
+    }
+
+    .third {
+        right: -10%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .body__text-lines {
+        margin: 0 0 100px 0px;
+    }
+
+    .body__pic-block .body__faces {
+        position: static;
+        display: flex;
+    }
+
+    .body__pic-block {
+        flex-direction: row;
+        margin-top: 40px;
+    }
+
+    .body__pic img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .parallax-moji .body__faces img {
+        width: 25vw;
+    }
+
+    .body__text-icon {
+        width: 10vw;
+    }
+
+    .body__text {
+        width: 100vw;
+    }
+
+    .body__text p {
+        letter-spacing: -0.5;
+    }
+
+    .body__text-lines .body__h3 {
+        line-height: 34px;
+    }
+
+    .body__text p, .body__text-sub p, .body__button-box a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .parallax-moji .body__faces img {
+        width: 27vw;
+    }
+
+    .body__section-divider {
+        margin: 120px auto 70px;
+    }
+
+    .right-face {
+        right: -7vw;
+    }
+
+    .left-face {
+        left: -5vw;
+        top: 30vh;
+    }
+    
+    .bottom-left-face {
+        left: 0;
+    }
+    
+    .bottom-right-face {
+        right: 0;
+    }
+
+    .header__logo {
+        font-size: 36px;
+    }
+
+    .body__headline {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .body__paragraph {
+        font-size: 20px;
+    }
+
+    .body__h3 {
+        font-size: 25px;
+    }
+
+    .body__sub-select h3 {
+        font-size: 34px;
+        letter-spacing: -0.6;
+    }
+
+    .body__subtitle {
+        font-size: 14px;
+    }
+
+    .body__text p,
+    .body__text-sub p,
+    .body__button-box a{
+        font-size: 20px;
+    }
+    
+    .body__text {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .body__button-box a {
+        font-size: 18px;
+        letter-spacing: -0.7;
+        justify-content: center;
+    }
+
+    .body__button-box {
+        align-items: stretch;
+    }
+
+    .body__button {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .body__button-box {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:320px) {
     
 }

@@ -108,16 +108,16 @@ const Body = () => {
                                 </div>
                             </div>
                             <div className="body__pic-block">
-                                <div className="body__pic first">
+                                <div className="body__pic body__faces first">
                                     <img src={Face6}/>
                                 </div>
-                                <div className="body__pic second">
+                                <div className="body__pic body__faces second">
                                     <img src={Face7}/>
                                 </div>
-                                <div className="body__pic third">
+                                <div className="body__pic body__faces third">
                                     <img src={Face8}/>
                                 </div>
-                                <div className="body__pic fourth">
+                                <div className="body__pic body__faces fourth">
                                     <img src={Face9}/>
                                 </div>
                             </div>
