@@ -111,9 +111,9 @@ body {
     background: url(https://d2kq0urxkarztv.cloudfront.net/60bae25c996d510089043f7e/2888580/upload-7d866a3f-26dd-49ce-a263-9d96dbd7998c.png?e=webp&nll=true) center / cover;
     background-attachment: fixed;
     overflow-x: hidden;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    -webkit-background-attachment: cover;
+    -moz-background-attachment: cover;
+    -o-background-attachment: cover;
 }
 
 .container {
